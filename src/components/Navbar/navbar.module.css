@@ -1,0 +1,64 @@
+.navbar {
+  height: 100vh;
+  background: #000;
+  width: max-content;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 10px;
+}
+
+.navList {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  color: #fff;
+  gap: 15px;
+}
+
+.navList li a {
+  padding: 10px;
+  font-size: 2.5rem;
+  background: #1a1919;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navList li a:active{
+  border-radius: 50px;
+  background: #000;
+}
+
+.active {
+  background: #ffab02 !important;
+}
+
+@media screen and (max-width: 900px) {
+  .navbar {
+    background: #ffab02;
+    width: 100vw;
+    height: fit-content;
+    padding: 6px 0;
+  }
+
+  .navList li a {
+    padding: 9px;
+    font-size: 2.3rem;
+  }
+
+  .active {
+    background: #000 !important;
+    position: relative;
+    top: -2.2rem;
+    border: 1px solid gray;
+  }
+
+  .navList {
+    flex-direction: row;
+  }
+}
