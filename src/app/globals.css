@@ -60,7 +60,7 @@ a {
   padding: 5px 20px;
   background: var(--primary-bg-color);
   color: var(--secodary-text-color);
-  font-size: 1.5rem;
+  font-size: 1.6rem;
 }
 
 @media (prefers-color-scheme: dark) {
