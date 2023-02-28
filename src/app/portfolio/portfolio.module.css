@@ -1,0 +1,9 @@
+.portfolioCard{
+    width: 100%;
+}
+
+.portfolioCard img {
+  width: 100% !important;
+  height: auto;
+  border-radius: 1.2rem;
+}
