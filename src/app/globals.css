@@ -10,14 +10,14 @@
   --white: #ffffff;
 
   --primary-text-color: var(--yellow);
-  --secodary-text-color: var(--white);
-  --secodary-text-color-2: var(--black);
+  --secondary-text-color: var(--white);
+  --secondary-text-color-2: var(--black);
 
   --primary-bg-color: var(--yellow);
-  --secodary-bg-color: var(--black);
+  --secondary-bg-color: var(--black);
 
   --primary-border-color: var(--yellow);
-  --secodary-border-color: var(--black);
+  --secondary-border-color: var(--black);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -45,7 +45,7 @@ body {
 }
 
 body {
-  color: var(--secodary-text-color);
+  color: var(--secondary-text-color);
   background: rgb(var(--foreground-rgb));
   font-family: "Inter", sans-serif;
 }
@@ -59,8 +59,13 @@ a {
   border-radius: 50px;
   padding: 5px 20px;
   background: var(--primary-bg-color);
-  color: var(--secodary-text-color);
+  color: var(--secondary-text-color);
   font-size: 1.6rem;
+}
+
+section{
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 }
 
 @media (prefers-color-scheme: dark) {

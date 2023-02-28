@@ -12,8 +12,6 @@ import styles from "./navbar.module.css";
 
 const Navbar = () => {
   const pathname = usePathname();
-  console.log(pathname);
-
   return (
     <nav className={styles.navbar}>
       <ul className={styles.navList}>

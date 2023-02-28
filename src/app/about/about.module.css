@@ -1,0 +1,54 @@
+.personalInfoSection {
+  font-size: 1.6rem;
+}
+
+.personalInfo h5 {
+  letter-spacing: 2px;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+.personalInfo ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-bottom: 4rem;
+}
+
+.personalInfo ul li {
+  font-weight: 300;
+  font-size: 1.8rem;
+  color: #cac3c3;
+}
+
+.personalInfo ul li span {
+  font-weight: 600;
+  color: var(--secondary-text-color) !important;
+}
+
+.infoCardBox {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 4rem;
+  row-gap: 3rem;
+}
+
+.infoCard {
+  border: 1px solid gray;
+  border-radius: 15px;
+  padding: 1rem 2.5rem;
+}
+
+.infoCard span {
+  font-size: 4rem;
+  color: var(--primary-text-color);
+}
+
+.infoCard p {
+  font-size: 2.5rem;
+}

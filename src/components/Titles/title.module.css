@@ -1,0 +1,44 @@
+.sectionMainTitle {
+  position: relative;
+  text-align: center;
+  margin-bottom: 8rem;
+}
+
+.sectionMainTitle h2,
+.sectionMainTitle h3 {
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+.sectionMainTitle h2 {
+  font-size: 9rem;
+  letter-spacing: 1.8rem;
+  color: rgb(39, 37, 37);
+}
+
+.sectionMainTitle h2::selection {
+  background: var(--primary-bg-color);
+  color: #000;
+}
+
+.sectionMainTitle::selection .sectionMainTitle h3 {
+  background: none;
+  color: rgba(0, 0, 0, 0);
+}
+
+/* .sectionMainTitle h3 span::selection{
+    background: none;
+    color: rgba(0, 0, 0, 0);
+} */
+
+.sectionMainTitle h3 {
+  font-size: 5rem;
+  letter-spacing: 0.5rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
