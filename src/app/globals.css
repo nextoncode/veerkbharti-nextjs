@@ -1,3 +1,5 @@
+/* @import url("boots"); */
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -8,7 +10,8 @@
   --white: #ffffff;
 
   --primary-text-color: var(--yellow);
-  --secodary-text-color: var(--black);
+  --secodary-text-color: var(--white);
+  --secodary-text-color-2: var(--black);
 
   --primary-bg-color: var(--yellow);
   --secodary-bg-color: var(--black);
@@ -42,12 +45,22 @@ body {
 }
 
 body {
+  color: var(--secodary-text-color);
   background: rgb(var(--foreground-rgb));
+  font-family: "Inter", sans-serif;
 }
 
 a {
   color: inherit;
   text-decoration: none;
+}
+
+.btn {
+  border-radius: 50px;
+  padding: 5px 20px;
+  background: var(--primary-bg-color);
+  color: var(--secodary-text-color);
+  font-size: 1.5rem;
 }
 
 @media (prefers-color-scheme: dark) {

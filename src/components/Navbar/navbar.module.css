@@ -17,6 +17,8 @@
   list-style: none;
   color: #fff;
   gap: 15px;
+  margin: 0;
+  padding: 0;
 }
 
 .navList li a {
@@ -27,6 +29,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  color: #ffffff;
 }
 
 .navList li a:active{
