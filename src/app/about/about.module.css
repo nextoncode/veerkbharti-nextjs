@@ -1,5 +1,6 @@
 .personalInfoSection {
   font-size: 1.6rem;
+  height: 100vh;
 }
 
 .personalInfo h5 {
@@ -51,4 +52,28 @@
 
 .infoCard p {
   font-size: 2.5rem;
+}
+
+.bottomLine {
+  margin: 12rem auto 0 auto;
+  text-align: center;
+  width: 50%;
+}
+
+.sectionSecondaryTitle{
+margin-bottom: 6rem;
+}
+
+.sectionSecondaryTitle h4 {
+  font-size: 3rem;
+  text-align: center;
+  font-weight: 600;
+  text-transform:capitalize;
+}
+
+.skillsContainer{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 5rem;
+  row-gap: 2rem;
 }

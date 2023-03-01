@@ -1,3 +1,4 @@
+import ProgressBar from "@/components/ProgressBar/ProgressBar";
 import SectionMainTitle from "@/components/Titles/SectionMainTitle";
 import Link from "next/link";
 import styles from "./about.module.css";
@@ -48,6 +49,47 @@ const AboutPage = () => {
                 <div className={styles.infoCard}>
                   <span>10+</span>
                   <p>Happy Clients</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <hr className={styles.bottomLine} />
+      </section>
+      <section>
+        <div className="container">
+          <div className={styles.sectionSecondaryTitle}>
+            <h4>My Skills</h4>
+          </div>
+          <div className={styles.skillsContainer}>
+            <ProgressBar title="Html" progress="90" />
+            <ProgressBar title="Node.Js" progress="90" />
+            <ProgressBar title="css" progress="90" />
+            <ProgressBar title="Express" progress="90" />
+            <ProgressBar title="Javascript" progress="85" />
+            <ProgressBar title="PHP" progress="90" />
+            <ProgressBar title="Bootstrap" progress="95" />
+            <ProgressBar title="Laravel" progress="60" />
+            <ProgressBar title="JQuery" progress="90" />
+            <ProgressBar title="Mysql" progress="90" />
+            <ProgressBar title="React.Js" progress="85" />
+            <ProgressBar title="Mongodb" progress="75" />
+            <ProgressBar title="Angular" progress="50" />
+            <ProgressBar title="AWS" progress="50" />
+          </div>
+        </div>
+      </section>
+      <section>
+        <div className="container">
+          <div className={styles.sectionSecondaryTitle}>
+            <h4>Experience & Education</h4>
+          </div>
+          <div className={styles.skillsContainer}>
+            <div className="row">
+              <div className="col-6">
+                <div className={styles.experienceCard}>
+                  
                 </div>
               </div>
             </div>
