@@ -1,0 +1,26 @@
+.progressContainer {
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  /* gap: 2rem; */
+  width: 100%;
+  font-size: 1.6rem;
+
+}
+
+.progressContainer p{
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.progressContainer .progressBar {
+  background: #403b3b;
+  flex: 1;
+  border-radius: 5px;
+}
+
+.progressContainer .progressNumber{
+  background: var(--primary-bg-color);
+  border-radius: 5px;
+  text-align: center;
+}
