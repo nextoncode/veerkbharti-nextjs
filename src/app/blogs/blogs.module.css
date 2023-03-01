@@ -1,0 +1,26 @@
+.blogCard {
+  width: 100%;
+  border-radius: 1.2rem;
+  background: #252525;
+}
+
+.blogCard img {
+  width: 100% !important;
+  height: auto;
+  border-start-start-radius: 1.2rem;
+  border-start-end-radius: 1.2rem;
+}
+
+.blogCard div {
+  padding: 1.2rem;
+  border-top: 3px solid var(--primary-border-color);
+}
+
+.blogCard h5 {
+  font-size: 2.2rem;
+}
+
+.blogCard p {
+  font-size: 1.6rem;
+  color: #cac3c3;
+}
