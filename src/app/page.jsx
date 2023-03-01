@@ -11,7 +11,7 @@ export default function Home() {
     <section className={styles.heroSection}>
       <div className="container-fluid">
         <div className="row">
-          <div className="col-sm-4">
+          <div className="col-sm-4 p-0 d-sm-block d-none">
             <div className={styles.imageContainer}>
               <Image
                 src="/images/own_img.png"
@@ -20,9 +20,10 @@ export default function Home() {
               />
             </div>
           </div>
-          <div className="col-sm-8">
+          <div className="col-sm-8 p-0">
             <div className="row">
-              <div className="col-8">
+              <div className="col-md-1 col-2 d-sm-block d-none"></div>
+              <div className="col-sm-8">
                 <div className={`${styles.content}`}>
                   <div className="title w-60">
                     <h3>Hello, It's Me</h3>

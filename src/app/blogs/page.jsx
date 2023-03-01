@@ -8,7 +8,7 @@ const BlogsPage = () => {
       <div className="container">
         <SectionMainTitle mainTitle="Posts" subTitle="My Blogs" />
         <div className="row">
-          <div className="col-4">
+          <div className="col-sm-6 col-md-4 mb-md-0 mb-4">
             <div className={styles.blogCard}>
               <Image
                 src={"http://unsplash.it/300/200"}
@@ -25,7 +25,7 @@ const BlogsPage = () => {
               </div>
             </div>
           </div>
-          <div className="col-4">
+          <div className="col-sm-6 col-md-4 mb-md-0 mb-4">
             <div className={styles.blogCard}>
               <Image
                 src={"http://unsplash.it/300/200"}
@@ -42,7 +42,7 @@ const BlogsPage = () => {
               </div>
             </div>
           </div>
-          <div className="col-4">
+          <div className="col-sm-6 col-md-4 mb-md-0 mb-4">
             <div className={styles.blogCard}>
               <Image
                 src={"http://unsplash.it/300/200"}

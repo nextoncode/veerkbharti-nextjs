@@ -78,3 +78,8 @@
   row-gap: 2rem;
 }
 
+@media (max-width: 576px) {
+  .skillsContainer {
+    grid-template-columns: 1fr;
+  }
+}

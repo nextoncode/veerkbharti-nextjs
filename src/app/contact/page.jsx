@@ -18,7 +18,7 @@ const ContactPage = () => {
 
         <div>
           <div className="row">
-            <div className="col-sm-6">
+            <div className="col-md-6 mb-md-0 mb-5">
               <div className={styles.contactInfoBox}>
                 <h4>Don't be shy</h4>
                 <p>
@@ -74,8 +74,8 @@ const ContactPage = () => {
                 </ul>
               </div>
             </div>
-            <div className="col-sm-1"></div>
-            <div className="col-sm-5">
+            <div className="col-md-1"></div>
+            <div className="col-md-5">
               <div className={styles.contactForm}>
                 <form>
                   <input type="text" name="name" id="name" placeholder="Name" />

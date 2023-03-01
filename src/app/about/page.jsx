@@ -146,7 +146,7 @@ const AboutPage = () => {
           </div>
           <div className={styles.experienceContainer}>
             <div className="row">
-              <div className="col-6">
+              <div className="col-sm-6">
                 {experienceData?.map((item, index) =>
                   item.experience === true ? (
                     <ExperienceCard key={index} {...item} />
@@ -155,7 +155,7 @@ const AboutPage = () => {
                   )
                 )}
               </div>
-              <div className="col-6">
+              <div className="col-sm-6">
                 {experienceData?.map((item, index) =>
                   item.experience === false ? (
                     <ExperienceCard key={index} {...item} />
