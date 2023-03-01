@@ -1,0 +1,78 @@
+.contactInfoBox h4 {
+  font-size: 3rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.contactInfoBox ul {
+  list-style: none;
+  display: flex;
+  padding: 0;
+}
+
+.contactInfoBox p {
+  font-size: 2rem;
+  color: #cac3c3;
+}
+
+.contactInfo {
+  flex-direction: column;
+}
+
+.contactInfo li {
+  display: flex;
+  gap: 2rem;
+}
+
+.contactInfo span {
+  font-size: 4rem;
+  color: var(--primary-text-color);
+}
+
+.contactInfo p {
+  color: var(--secondary-text-color);
+}
+
+.contactInfo a {
+  font-size: 1.8rem;
+  color: #cac3c3;
+}
+
+.contactInfo a:hover {
+  color: var(--primary-text-color);
+}
+
+.socialLinks {
+  gap: 2rem;
+}
+
+.socialLinks li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.5rem;
+  background: #1a1919;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+}
+
+.contactForm form {
+  display: flex;
+  flex-direction: column;
+  gap: 2.8rem;
+}
+
+.contactForm form input, .contactForm textarea {
+  background: #403b3b;
+  outline: none;
+  border: none;
+  font-size: 2rem;
+  padding: 1.5rem;
+  border-radius: 10px;
+  color: var(--secondary-text-color);
+}
+
+.contactForm form button{
+    font-size: 2rem;
+}
