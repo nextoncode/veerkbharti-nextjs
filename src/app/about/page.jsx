@@ -1,9 +1,67 @@
+import ExperienceCard from "@/components/ExperienceCard/experienceCard";
 import ProgressBar from "@/components/ProgressBar/ProgressBar";
 import SectionMainTitle from "@/components/Titles/SectionMainTitle";
 import Link from "next/link";
+import { FaBriefcase } from "react-icons/fa";
 import styles from "./about.module.css";
 
 const AboutPage = () => {
+  const experienceData = [
+    {
+      title: "Software Engineer",
+      org: "Bloomcs",
+      description:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit deserunt, tenetur earum tempore enim reprehenderit.",
+      startDate: "2022",
+      endDate: "Present",
+      experience: true,
+    },
+    {
+      title: "Project Engineer",
+      org: "Dexterous Technologies",
+      description:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit deserunt, tenetur earum tempore enim reprehenderit.",
+      startDate: "2021",
+      endDate: "2022",
+      experience: true,
+    },
+    {
+      title: "Full stack developer",
+      org: "Freelance",
+      description:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit deserunt, tenetur earum tempore enim reprehenderit.",
+      startDate: "2020",
+      endDate: "Present",
+      experience: true,
+    },
+    {
+      title: "MCA",
+      org: "LPU, Phagwara, Punjab",
+      description:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit deserunt, tenetur earum tempore enim reprehenderit.",
+      startDate: "2022",
+      endDate: "Present",
+      experience: false,
+    },
+    {
+      title: "BCA",
+      org: "Magadh University, Bodh Gaya",
+      description:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit deserunt, tenetur earum tempore enim reprehenderit.",
+      startDate: "2017",
+      endDate: "2020",
+      experience: false,
+    },
+    {
+      title: "Frontend Development",
+      org: "WsCube Tech",
+      description:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit deserunt, tenetur earum tempore enim reprehenderit.",
+      startDate: "2020",
+      endDate: "2020",
+      experience: false,
+    },
+  ];
   return (
     <>
       <section className={styles.personalInfoSection}>
@@ -63,7 +121,7 @@ const AboutPage = () => {
             <h4>My Skills</h4>
           </div>
           <div className={styles.skillsContainer}>
-            <ProgressBar title="Html" progress="90" />
+            <ProgressBar title="Html" progress="80" />
             <ProgressBar title="Node.Js" progress="90" />
             <ProgressBar title="css" progress="90" />
             <ProgressBar title="Express" progress="90" />
@@ -79,18 +137,32 @@ const AboutPage = () => {
             <ProgressBar title="AWS" progress="50" />
           </div>
         </div>
+        <hr className={styles.bottomLine} />
       </section>
-      <section>
+      <section className="mb-5">
         <div className="container">
           <div className={styles.sectionSecondaryTitle}>
             <h4>Experience & Education</h4>
           </div>
-          <div className={styles.skillsContainer}>
+          <div className={styles.experienceContainer}>
             <div className="row">
               <div className="col-6">
-                <div className={styles.experienceCard}>
-                  
-                </div>
+                {experienceData?.map((item, index) =>
+                  item.experience === true ? (
+                    <ExperienceCard key={index} {...item} />
+                  ) : (
+                    ""
+                  )
+                )}
+              </div>
+              <div className="col-6">
+                {experienceData?.map((item, index) =>
+                  item.experience === false ? (
+                    <ExperienceCard key={index} {...item} />
+                  ) : (
+                    ""
+                  )
+                )}
               </div>
             </div>
           </div>
