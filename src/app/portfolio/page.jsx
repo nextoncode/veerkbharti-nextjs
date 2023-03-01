@@ -5,7 +5,7 @@ import styles from "./portfolio.module.css";
 
 const PortfolioPage = () => {
   return (
-    <section className={styles.personalInfoSection}>
+    <section>
       <div className="container">
         <SectionMainTitle mainTitle="Works" subTitle="Portfolio" />
         <div className="row">
