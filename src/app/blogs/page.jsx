@@ -11,24 +11,7 @@ const BlogsPage = () => {
           <div className="col-sm-6 col-md-4 mb-md-0 mb-4">
             <div className={styles.blogCard}>
               <Image
-                src={"http://unsplash.it/300/200"}
-                alt="Porfolio image"
-                width={300}
-                height={200}
-              />
-              <div>
-                <h5>What is the Future of Cryptocurrency?</h5>
-                <p>
-                  Cryptocurrency has literally been dominating for the last few
-                  months. Despite the..
-                </p>
-              </div>
-            </div>
-          </div>
-          <div className="col-sm-6 col-md-4 mb-md-0 mb-4">
-            <div className={styles.blogCard}>
-              <Image
-                src={"http://unsplash.it/300/200"}
+                src={"/images/blog/blog-2.jpg"}
                 alt="Porfolio image"
                 width={300}
                 height={200}
@@ -45,7 +28,24 @@ const BlogsPage = () => {
           <div className="col-sm-6 col-md-4 mb-md-0 mb-4">
             <div className={styles.blogCard}>
               <Image
-                src={"http://unsplash.it/300/200"}
+                src={"/images/blog/blog-1.jpg"}
+                alt="Porfolio image"
+                width={300}
+                height={200}
+              />
+              <div>
+                <h5>What is the Future of Cryptocurrency?</h5>
+                <p>
+                  Cryptocurrency has literally been dominating for the last few
+                  months. Despite the..
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="col-sm-6 col-md-4 mb-md-0 mb-4">
+            <div className={styles.blogCard}>
+              <Image
+                src={"/images/blog/blog-3.jpg"}
                 alt="Porfolio image"
                 width={300}
                 height={200}

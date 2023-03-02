@@ -6,13 +6,13 @@ import styles from "./portfolio.module.css";
 const PortfolioPage = () => {
   return (
     <section>
-      <div className="container">
+      <div className="container mb-5 pb-5">
         <SectionMainTitle mainTitle="Works" subTitle="Portfolio" />
         <div className="row">
           <div className="col-sm-6 col-md-4 mb-md-0 mb-4">
             <div className={styles.portfolioCard}>
               <Image
-                src={"http://unsplash.it/300/200"}
+                src={"/images/portfolio/port-1.png"}
                 alt="Porfolio image"
                 width={300}
                 height={200}
@@ -22,7 +22,7 @@ const PortfolioPage = () => {
           <div className="col-sm-6 col-md-4 mb-md-0 mb-4">
             <div className={styles.portfolioCard}>
               <Image
-                src={"http://unsplash.it/300/200"}
+                src={"/images/portfolio/port-2.png"}
                 alt="Porfolio image"
                 width={300}
                 height={200}
@@ -32,7 +32,7 @@ const PortfolioPage = () => {
           <div className="col-sm-6 col-md-4 mb-md-0 mb-4">
             <div className={styles.portfolioCard}>
               <Image
-                src={"http://unsplash.it/300/200"}
+                src={"/images/portfolio/port-3.png"}
                 alt="Porfolio image"
                 width={300}
                 height={200}
