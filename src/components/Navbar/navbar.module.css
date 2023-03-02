@@ -44,7 +44,9 @@
 @media screen and (max-width: 992px) {
   .navList {
     gap: 20px;
+    flex-direction: row;
   }
+
   .navbar {
     background: #ffab02;
     width: 100vw;
@@ -63,9 +65,5 @@
     position: relative;
     top: -2.2rem;
     border: 1px solid gray;
-  }
-
-  .navList {
-    flex-direction: row;
   }
 }

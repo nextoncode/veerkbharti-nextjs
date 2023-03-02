@@ -24,3 +24,13 @@
   font-size: 1.6rem;
   color: #cac3c3;
 }
+
+@media screen and (max-width: 992px){
+  .blogCard h5 {
+    font-size: 2.6rem;
+  }
+
+  .blogCard p {
+    font-size: 2rem;
+  }
+}
