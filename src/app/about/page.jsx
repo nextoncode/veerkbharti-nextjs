@@ -1,4 +1,4 @@
-import ExperienceCard from "@/components/ExperienceCard/experienceCard";
+import ExperienceCard from "@/components/ExperienceCard/ExperienceCard";
 import ProgressBar from "@/components/ProgressBar/ProgressBar";
 import SectionMainTitle from "@/components/Titles/SectionMainTitle";
 import Link from "next/link";
