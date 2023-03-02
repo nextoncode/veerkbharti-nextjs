@@ -11,16 +11,19 @@ export default function Home() {
     <section className={styles.heroSection}>
       <div className="container-fluid">
         <div className="row">
-          <div className="col-sm-4 p-0 d-sm-block d-none">
-            <div className={styles.imageContainer}>
+          <div className="col-md-4 p-0">
+            <div className={`${styles.imageContainer} d-md-block d-none`}>
               <Image
                 src="/images/own_img.png"
                 alt="Picture of the author"
                 fill
               />
             </div>
+            <div className={`${styles.imageContainerMob} d-md-none d-block`}>
+              <Image src="/images/dp.png" alt="Picture of the author" fill />
+            </div>
           </div>
-          <div className="col-sm-8 p-0">
+          <div className="col-md-8 p-0">
             <div className="row">
               <div className="col-md-1 col-2 d-sm-block d-none"></div>
               <div className="col-sm-8">

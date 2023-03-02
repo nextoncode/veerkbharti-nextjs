@@ -8,8 +8,18 @@
   background: url("/images/ShapeBG.png");
   background-position: right bottom;
   background-size: cover;
-
   position: "relative";
+}
+
+.imageContainerMob {
+  width: 100%;
+  padding: 5rem 10rem;
+}
+
+.imageContainerMob img {
+  width: 100% !important;
+  height: auto !important;
+  position: relative !important;
 }
 
 .imageContainer img {
@@ -30,12 +40,14 @@
   letter-spacing: 1px;
 }
 
-.content h3 {
-  font-size: 2.5rem !important;
-}
-
 .content h1 {
   font-size: 4.5rem !important;
+  margin-top: 1.2rem;
+  margin-bottom: 0.8rem;
+}
+
+.content h3 {
+  font-size: 2.5rem !important;
 }
 
 .content p {
@@ -49,4 +61,28 @@
 
 .content span {
   color: var(--primary-bg-color);
+}
+
+@media screen and (max-width: 576px) {
+  .content h1 {
+    font-size: 4rem !important;
+    margin-bottom: 1.2rem;
+  }
+
+  .heroSection {
+    padding: 0 15px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .content {
+    height: auto;
+    padding-bottom: 15rem;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .imageContainerMob {
+    padding: 5rem 20rem;
+  }
 }
