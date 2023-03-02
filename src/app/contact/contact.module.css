@@ -2,6 +2,7 @@
   font-size: 3rem;
   font-weight: 700;
   text-transform: uppercase;
+  margin-bottom: 2rem;
 }
 
 .contactInfoBox ul {
@@ -13,6 +14,7 @@
 .contactInfoBox p {
   font-size: 2rem;
   color: #cac3c3;
+  margin-bottom: 2rem;
 }
 
 .contactInfo {
@@ -75,4 +77,5 @@
 
 .contactForm form button{
     font-size: 2rem;
+    align-self: flex-start;
 }

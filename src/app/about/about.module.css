@@ -3,9 +3,14 @@
   height: 100vh;
 }
 
+.personalInfo {
+  display: flex;
+  flex-direction: column;
+}
+
 .personalInfo h5 {
   letter-spacing: 2px;
-  font-size: 2.5rem;
+  font-size: 3rem;
   text-transform: uppercase;
   font-weight: 700;
   margin-bottom: 1.5rem;
@@ -18,18 +23,22 @@
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
-  margin-bottom: 4rem;
+  margin-bottom: 3rem;
 }
 
 .personalInfo ul li {
   font-weight: 300;
-  font-size: 1.8rem;
+  font-size: 2rem;
   color: #cac3c3;
 }
 
 .personalInfo ul li span {
   font-weight: 600;
   color: var(--secondary-text-color) !important;
+}
+
+.personalInfo a {
+  align-self: flex-start;
 }
 
 .infoCardBox {
@@ -81,5 +90,24 @@
 @media (max-width: 576px) {
   .skillsContainer {
     grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 767px) {
+  .personalInfo h5 {
+    align-self: center;
+  }
+
+  .personalInfo h5 {
+    font-size: 3rem;
+    margin-bottom: 4rem;
+  }
+
+  .personalInfo ul li {
+    font-size: 2.5rem;
+  }
+
+  .personalInfo a {
+    font-size: 2.2rem;
   }
 }

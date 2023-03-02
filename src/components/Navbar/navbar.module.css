@@ -41,7 +41,10 @@
   background: #ffab02 !important;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 992px) {
+  .navList {
+    gap: 20px;
+  }
   .navbar {
     background: #ffab02;
     width: 100vw;
@@ -51,7 +54,7 @@
 
   .navList li a {
     padding: 9px;
-    font-size: 2.3rem;
+    font-size: 3.2rem;
   }
 
   .active {

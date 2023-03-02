@@ -76,7 +76,7 @@ const ContactPage = () => {
             </div>
             <div className="col-md-1"></div>
             <div className="col-md-5">
-              <div className={styles.contactForm}>
+              <div className={`${styles.contactForm} mb-5 pb-5`}>
                 <form>
                   <input type="text" name="name" id="name" placeholder="Name" />
                   <input type="email" name="email" id="email" placeholder="Email" />

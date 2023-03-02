@@ -1,7 +1,7 @@
 .experienceCard {
   display: flex;
   gap: 1.6rem;
-  margin-bottom: 2rem;
+  margin-bottom: 3.5rem;
 }
 
 .experienceCard .cardIcon {
@@ -35,15 +35,32 @@
   border: none;
   text-align: center;
   margin-bottom: 1.4rem;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
 }
 
 .experienceCard .cardContent h5 {
   color: var(--secondary-text-color);
   font-size: 2.2rem;
+  margin-bottom: 1rem;
 }
 
 .experienceCard .cardContent p {
   font-size: 1.6rem;
   color: #cac3c3;
+}
+
+@media screen and (max-width: 767px) {
+  .experienceCard .cardIcon button {
+  font-size: 2.4rem;
+  width: 5.6rem;
+  height: 5.6rem;
+}
+
+  .experienceCard .cardContent button {
+  font-size: 1.6rem;
+}
+
+  .experienceCard .cardContent h5 {
+    font-size: 2.5rem;
+  }
 }

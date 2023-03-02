@@ -52,15 +52,15 @@ const AboutPage = () => {
       endDate: "2020",
       experience: false,
     },
-    {
-      title: "Frontend Development",
-      org: "WsCube Tech",
-      description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit deserunt, tenetur earum tempore enim reprehenderit.",
-      startDate: "2020",
-      endDate: "2020",
-      experience: false,
-    },
+    // {
+    //   title: "Frontend Development",
+    //   org: "WsCube Tech",
+    //   description:
+    //     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit deserunt, tenetur earum tempore enim reprehenderit.",
+    //   startDate: "2020",
+    //   endDate: "2020",
+    //   experience: false,
+    // },
   ];
   return (
     <>
@@ -68,8 +68,10 @@ const AboutPage = () => {
         <div className="container">
           <SectionMainTitle mainTitle="Resume" subTitle="About Me" />
           <div className="row">
-            <div className="col-sm-4">
-              <div className={styles.personalInfo}>
+            <div className="col-md-4">
+              <div
+                className={`${styles.personalInfo} mb-md-0 mb-5`}
+              >
                 <h5>Personal Info</h5>
                 <ul>
                   <li>
@@ -90,7 +92,7 @@ const AboutPage = () => {
                 </Link>
               </div>
             </div>
-            <div className="col-sm-8">
+            <div className="col-md-8">
               <div className={styles.infoCardBox}>
                 <div className={styles.infoCard}>
                   <span>3+</span>
