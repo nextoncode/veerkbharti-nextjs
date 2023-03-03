@@ -3,6 +3,7 @@ import Link from "next/link";
 import {
   FaGithubAlt,
   FaInstagram,
+  FaLink,
   FaLinkedinIn,
   FaPhone,
   FaRocketchat,
@@ -44,42 +45,45 @@ const ContactPage = () => {
                     </span>
                     <p>
                       Call me <br />{" "}
-                      <Link href={"tel:+919471988414"}>
-                        +91-9471988414
-                      </Link>
+                      <Link href={"tel:+919471988414"}>+91-9471988414</Link>
                     </p>
                   </li>
                 </ul>
                 <ul className={styles.socialLinks}>
                   <li>
-                    <Link href={"#"}>
+                    <Link href={"https://linkedin.com/in/veerkbharti"}>
                       <FaLinkedinIn />
                     </Link>
                   </li>
                   <li>
-                    <Link href={"#"}>
+                    <Link href={"https://github.com/veerkbharti"}>
                       <FaGithubAlt />
                     </Link>
                   </li>
                   <li>
-                    <Link href={"#"}>
+                    <Link href={"https://github.com/@nextoncode"}>
                       <FaYoutube />
                     </Link>
                   </li>
                   <li>
-                    <Link href={"#"}>
-                      <FaInstagram />
+                    <Link href={"https://linktree.com/veerkbharti"}>
+                      <FaLink />
                     </Link>
                   </li>
                 </ul>
               </div>
             </div>
-            <div className="col-md-1"></div>
-            <div className="col-md-5">
+            <div className="col-md-1 d-none d-lg-block"></div>
+            <div className="col-md-6 col-lg-5">
               <div className={`${styles.contactForm} mb-5 pb-5`}>
                 <form>
                   <input type="text" name="name" id="name" placeholder="Name" />
-                  <input type="email" name="email" id="email" placeholder="Email" />
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    placeholder="Email"
+                  />
                   <textarea
                     name="message"
                     id="message"
@@ -87,7 +91,9 @@ const ContactPage = () => {
                     rows="4"
                     placeholder="Message"
                   ></textarea>
-                  <button type="submit" className="btn">Send Message</button>
+                  <button type="submit" className="btn">
+                    Send Message
+                  </button>
                 </form>
               </div>
             </div>

@@ -35,9 +35,9 @@
   margin: 0;
 }
 
-html {
+/* html {
   font-size: 10px;
-}
+} */
 
 html,
 body {
@@ -58,15 +58,15 @@ a {
 
 .btn {
   border-radius: 50px;
-  padding: 5px 20px;
+  padding: 5px 30px;
   background: var(--primary-bg-color);
   color: var(--secondary-text-color);
-  font-size: 2rem;
+  font-size: 1.2rem;
 }
 
 section {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 
 ::selection {
@@ -102,34 +102,8 @@ section {
   }
 } */
 
-/* Small devices (landscape phones, 576px and  */
-@media (max-width: 768px) {
-  html {
-    font-size: 8px;
-  }
+@media screen and (max-width: 576px) {
+  .btn {
+  font-size: 1rem;
 }
-
-/* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {
-  html {
-    font-size: 8px;
-  }
-}
-
-/* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {
-  html {
-    font-size: 10px;
-  }
-}
-
-/* X-Large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
-  html {
-    /* font-size: 10px; */
-  }
-}
-
-/* XX-Large devices (larger desktops, 1400px and up) */
-@media (min-width: 1400px) {
 }

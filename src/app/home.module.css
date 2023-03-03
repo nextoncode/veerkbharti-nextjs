@@ -13,7 +13,7 @@
 
 .imageContainerMob {
   width: 100%;
-  padding: 5rem 5rem;
+  padding: 3.1rem 15%;
 }
 
 .imageContainerMob img {
@@ -41,20 +41,20 @@
 }
 
 .content h1 {
-  font-size: 4.5rem !important;
-  margin-top: 1.2rem;
-  margin-bottom: 0.8rem;
+  font-size: 2.8rem !important;
+  margin-top: 0.7rem;
+  margin-bottom: 0.7rem;
 }
 
 .content h3 {
-  font-size: 2.5rem !important;
+  font-size: 1.5rem !important;
 }
 
 .content p {
-  font-size: 2rem;
+  font-size: 1.3rem;
   font-weight: 300 !important;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+  margin-top: 1.2rem;
+  margin-bottom: 1.2rem;
   letter-spacing: 1px;
   color: #cac3c3;
 }
@@ -63,10 +63,36 @@
   color: var(--primary-bg-color);
 }
 
+@media screen and (max-width: 767px) {
+  .content h1 {
+    font-size: 2.4rem !important;
+  }
+
+  .content h3 {
+    font-size: 1.4rem !important;
+  }
+
+  .content {
+    height: auto;
+    padding-bottom: 8rem;
+  }
+
+  .content p {
+    font-size: 1.2rem;
+  }
+}
+
 @media screen and (max-width: 576px) {
   .content h1 {
-    font-size: 4rem !important;
-    margin-bottom: 1.2rem;
+    font-size: 2rem !important;
+  }
+
+  .content h3 {
+    font-size: 1.2rem !important;
+  }
+
+  .content p {
+    font-size: 1rem;
   }
 
   .heroSection {
@@ -74,15 +100,8 @@
   }
 }
 
-@media screen and (max-width: 767px) {
-  .content {
-    height: auto;
-    padding-bottom: 15rem;
-  }
-}
-
 @media screen and (min-width: 576px) {
   .imageContainerMob {
-    padding: 5rem 20rem;
+    padding: 3.1rem 20%;
   }
 }

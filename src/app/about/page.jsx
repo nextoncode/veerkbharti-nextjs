@@ -65,13 +65,11 @@ const AboutPage = () => {
   return (
     <>
       <section className={styles.personalInfoSection}>
+        <SectionMainTitle mainTitle="Resume" subTitle="About Me" />
         <div className="container">
-          <SectionMainTitle mainTitle="Resume" subTitle="About Me" />
           <div className="row">
             <div className="col-md-4">
-              <div
-                className={`${styles.personalInfo} mb-md-0 mb-5`}
-              >
+              <div className={`${styles.personalInfo} mb-md-0 mb-5`}>
                 <h5>Personal Info</h5>
                 <ul>
                   <li>
@@ -123,20 +121,28 @@ const AboutPage = () => {
             <h4>My Skills</h4>
           </div>
           <div className={styles.skillsContainer}>
-            <ProgressBar title="Html" progress="80" />
-            <ProgressBar title="Node.Js" progress="90" />
-            <ProgressBar title="css" progress="90" />
-            <ProgressBar title="Express" progress="90" />
-            <ProgressBar title="Javascript" progress="85" />
-            <ProgressBar title="PHP" progress="90" />
-            <ProgressBar title="Bootstrap" progress="95" />
-            <ProgressBar title="Laravel" progress="60" />
-            <ProgressBar title="JQuery" progress="90" />
-            <ProgressBar title="Mysql" progress="90" />
-            <ProgressBar title="React.Js" progress="85" />
-            <ProgressBar title="Mongodb" progress="75" />
-            <ProgressBar title="Angular" progress="50" />
-            <ProgressBar title="AWS" progress="50" />
+            <div className="row g-5">
+              <div className="col-md-6 d-flex flex-column gap-3">
+                <h4 className="text-center">Frontend Skills</h4>
+                <ProgressBar title="Html" progress="80" />
+                <ProgressBar title="css" progress="90" />
+                <ProgressBar title="Javascript" progress="85" />
+                <ProgressBar title="Bootstrap" progress="95" />
+                <ProgressBar title="JQuery" progress="90" />
+                <ProgressBar title="React.Js" progress="85" />
+                <ProgressBar title="Angular" progress="50" />
+              </div>
+              <div className="col-md-6 d-flex flex-column gap-3">
+                <h4 className="text-center">Backend Skills</h4>
+                <ProgressBar title="Node.Js" progress="90" />
+                <ProgressBar title="Express" progress="90" />
+                <ProgressBar title="PHP" progress="90" />
+                <ProgressBar title="Laravel" progress="60" />
+                <ProgressBar title="Mysql" progress="90" />
+                <ProgressBar title="Mongodb" progress="75" />
+                <ProgressBar title="AWS" progress="50" />
+              </div>
+            </div>
           </div>
         </div>
         <hr className={styles.bottomLine} />
@@ -148,7 +154,7 @@ const AboutPage = () => {
           </div>
           <div className={styles.experienceContainer}>
             <div className="row">
-              <div className="col-sm-6">
+              <div className="col-md-6">
                 {experienceData?.map((item, index) =>
                   item.experience === true ? (
                     <ExperienceCard key={index} {...item} />
@@ -157,7 +163,7 @@ const AboutPage = () => {
                   )
                 )}
               </div>
-              <div className="col-sm-6">
+              <div className="col-md-6">
                 {experienceData?.map((item, index) =>
                   item.experience === false ? (
                     <ExperienceCard key={index} {...item} />

@@ -17,9 +17,7 @@ const ExperienceCard = ({
           {experience === true ? (
             <FaBriefcase />
           ) : (
-            <span style={{ fontSize: "25px" }}>
-              <FaGraduationCap />
-            </span>
+              <FaGraduationCap style={{ fontSize: "30px" }} />
           )}
         </button>
         <hr />

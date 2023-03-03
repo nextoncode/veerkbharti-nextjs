@@ -1,7 +1,7 @@
 .sectionMainTitle {
   position: relative;
   text-align: center;
-  margin-bottom: 8rem;
+  margin-bottom: 3.5rem;
 }
 
 .sectionMainTitle h2,
@@ -12,7 +12,7 @@
 }
 
 .sectionMainTitle h2 {
-  font-size: 10rem;
+  font-size: 7rem;
   letter-spacing: 2rem;
   color: rgb(39, 37, 37);
 }
@@ -27,13 +27,8 @@
   color: rgba(0, 0, 0, 0);
 }
 
-/* .sectionMainTitle h3 span::selection{
-    background: none;
-    color: rgba(0, 0, 0, 0);
-} */
-
 .sectionMainTitle h3 {
-  font-size: 5rem;
+  font-size: 3.1rem;
   letter-spacing: 0.5rem;
   position: absolute;
   top: 50%;
@@ -44,24 +39,41 @@
   user-select: none;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 992px) {
   .sectionMainTitle h2 {
-    font-size: 7rem;
+    font-size: 6rem;
+    letter-spacing: 1.4rem;
   }
 
   .sectionMainTitle h3 {
-    font-size: 3.8rem;
+    font-size: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .sectionMainTitle h2 {
+    font-size: 4rem;
+    letter-spacing: 1.2rem;
+  }
+
+  .sectionMainTitle h3 {
+    font-size: 2rem;
+  }
+
+  .sectionMainTitle {
+    margin-bottom: 2.2rem;
   }
 }
 
 @media screen and (max-width: 575px) {
   .sectionMainTitle h2 {
-    font-size: 6.7rem;
-  letter-spacing: 1.5rem;
+    font-size: 3rem;
+    letter-spacing: 0.7rem;
   }
 
   .sectionMainTitle h3 {
-    font-size: 3.6rem;
+    font-size: 1.4rem;
+    letter-spacing: 0.2rem;
     transform: translate(-50%, 10%);
   }
 }

@@ -1,20 +1,20 @@
 .contactInfoBox h4 {
-  font-size: 3rem;
+  font-size: 1.9rem;
   font-weight: 700;
   text-transform: uppercase;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 .contactInfoBox ul {
   list-style: none;
   display: flex;
   padding: 0;
+  gap: 0.6rem;
 }
 
 .contactInfoBox p {
-  font-size: 2rem;
+  font-size: 1.2rem;
   color: #cac3c3;
-  margin-bottom: 2rem;
 }
 
 .contactInfo {
@@ -23,11 +23,11 @@
 
 .contactInfo li {
   display: flex;
-  gap: 2rem;
+  gap: 1.2rem;
 }
 
 .contactInfo span {
-  font-size: 4rem;
+  font-size: 2.7rem;
   color: var(--primary-text-color);
 }
 
@@ -36,7 +36,7 @@
 }
 
 .contactInfo a {
-  font-size: 1.8rem;
+  font-size: 1.1rem;
   color: #cac3c3;
 }
 
@@ -45,14 +45,14 @@
 }
 
 .socialLinks {
-  gap: 2rem;
+  gap: 1.4rem !important;
 }
 
 .socialLinks li a {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 2.5rem;
+  font-size: 1.8rem;
   background: #1a1919;
   width: 50px;
   height: 50px;
@@ -62,20 +62,40 @@
 .contactForm form {
   display: flex;
   flex-direction: column;
-  gap: 2.8rem;
+  gap: 1.8rem;
 }
 
-.contactForm form input, .contactForm textarea {
+.contactForm form input,
+.contactForm textarea {
   background: #403b3b;
   outline: none;
   border: none;
-  font-size: 2rem;
-  padding: 1.5rem;
+  font-size: 1.2rem;
+  padding: 0.9rem;
   border-radius: 10px;
   color: var(--secondary-text-color);
 }
 
-.contactForm form button{
-    font-size: 2rem;
-    align-self: flex-start;
+.contactForm form button {
+  font-size: 1.2rem;
+  align-self: flex-start;
+}
+
+@media screen and (max-width: 992px) {
+  .socialLinks {
+  gap: 1.2rem !important;
+}
+
+  .socialLinks li a {
+    font-size: 1.5rem;
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .contactInfoBox h4 {
+    font-size: 1.7rem;
+    margin-bottom: 0.8rem;
+  }
 }

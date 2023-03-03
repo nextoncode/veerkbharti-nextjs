@@ -1,5 +1,5 @@
 .personalInfoSection {
-  font-size: 1.6rem;
+  font-size: 1rem;
   height: 100vh;
 }
 
@@ -10,10 +10,10 @@
 
 .personalInfo h5 {
   letter-spacing: 2px;
-  font-size: 3rem;
+  font-size: 1.9rem;
   text-transform: uppercase;
   font-weight: 700;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 .personalInfo ul {
@@ -22,13 +22,13 @@
   padding: 0;
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
-  margin-bottom: 3rem;
+  gap: 1rem;
+  margin-bottom: 2rem;
 }
 
 .personalInfo ul li {
   font-weight: 300;
-  font-size: 2rem;
+  font-size: 1.3rem;
   color: #cac3c3;
 }
 
@@ -51,45 +51,68 @@
 .infoCard {
   border: 1px solid gray;
   border-radius: 15px;
-  padding: 1rem 2.5rem;
+  padding: 0.7rem 2rem;
 }
 
 .infoCard span {
-  font-size: 4rem;
+  font-size: 2.7rem;
   color: var(--primary-text-color);
 }
 
 .infoCard p {
-  font-size: 2.5rem;
+  font-size: 1.6rem;
 }
 
 .bottomLine {
-  margin: 12rem auto 0 auto;
+  margin: 4rem auto 0 auto;
   text-align: center;
   width: 50%;
 }
 
 .sectionSecondaryTitle {
-  margin-bottom: 6rem;
+  margin-bottom: 4.8rem;
 }
 
 .sectionSecondaryTitle h4 {
-  font-size: 3rem;
+  font-size: 1.8rem;
   text-align: center;
   font-weight: 600;
   text-transform: capitalize;
 }
 
-.skillsContainer {
+/* .skillsContainer {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  column-gap: 5rem;
-  row-gap: 2rem;
-}
+  column-gap: 3.1rem;
+  row-gap: 1.2rem;
+} */
 
-@media (max-width: 576px) {
-  .skillsContainer {
-    grid-template-columns: 1fr;
+
+@media screen and (max-width: 992px) {
+  .personalInfo h5 {
+    letter-spacing: 2px;
+    font-size: 1.2rem;
+  }
+
+  .personalInfo ul li {
+    font-size: 1rem;
+  }
+
+  .infoCardBox {
+    column-gap: 1.6rem;
+    row-gap: 1.2rem;
+  }
+
+  .infoCard {
+    padding: 0.5rem 1.2rem;
+  }
+
+  .infoCard span {
+    font-size: 2.3rem;
+  }
+
+  .infoCard p {
+    font-size: 1.2rem;
   }
 }
 
@@ -99,15 +122,22 @@
   }
 
   .personalInfo h5 {
-    font-size: 3rem;
-    margin-bottom: 4rem;
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
   }
 
   .personalInfo ul li {
-    font-size: 2.5rem;
+    font-size: 1.3rem;
   }
 
-  .personalInfo a {
-    font-size: 2.2rem;
+  .personalInfo ul {
+    gap: 0.8rem;
+  }
+
+}
+
+@media (max-width: 576px) {
+  .skillsContainer {
+    grid-template-columns: 1fr;
   }
 }
