@@ -64,7 +64,7 @@ const AboutPage = () => {
   ];
   return (
     <>
-      <section className={styles.personalInfoSection}>
+      <section className="pb-0">
         <SectionMainTitle mainTitle="Resume" subTitle="About Me" />
         <div className="container">
           <div className="row">
@@ -115,7 +115,7 @@ const AboutPage = () => {
 
         <hr className={styles.bottomLine} />
       </section>
-      <section>
+      <section className={styles.personalInfoSection}>
         <div className="container">
           <div className={styles.sectionSecondaryTitle}>
             <h4>My Skills</h4>
@@ -123,7 +123,7 @@ const AboutPage = () => {
           <div className={styles.skillsContainer}>
             <div className="row g-5">
               <div className="col-md-6 d-flex flex-column gap-3">
-                <h4 className="text-center">Frontend Skills</h4>
+                <h4 className="text-md-center text-start">Frontend Skills</h4>
                 <ProgressBar title="Html" progress="80" />
                 <ProgressBar title="css" progress="90" />
                 <ProgressBar title="Javascript" progress="85" />
@@ -133,7 +133,7 @@ const AboutPage = () => {
                 <ProgressBar title="Angular" progress="50" />
               </div>
               <div className="col-md-6 d-flex flex-column gap-3">
-                <h4 className="text-center">Backend Skills</h4>
+                <h4 className="text-md-center text-start">Backend Skills</h4>
                 <ProgressBar title="Node.Js" progress="90" />
                 <ProgressBar title="Express" progress="90" />
                 <ProgressBar title="PHP" progress="90" />
@@ -147,8 +147,8 @@ const AboutPage = () => {
         </div>
         <hr className={styles.bottomLine} />
       </section>
-      <section className="mb-5">
-        <div className="container">
+      <section className={styles.personalInfoSection}>
+        <div className="container mb-lg-0 mb-5">
           <div className={styles.sectionSecondaryTitle}>
             <h4>Experience & Education</h4>
           </div>

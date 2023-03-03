@@ -1,10 +1,9 @@
 .progressContainer {
   width: 100%;
   font-size: 1rem;
-
 }
 
-.progressContainer p{
+.progressContainer p {
   margin: 0;
   text-transform: uppercase;
 }
@@ -15,8 +14,14 @@
   border-radius: 5px;
 }
 
-.progressContainer .progressNumber{
+.progressContainer .progressNumber {
   background: var(--primary-bg-color);
   border-radius: 5px;
   text-align: center;
+}
+
+@media (max-width: 412px) {
+  .progressContainer {
+    font-size: 0.9rem;
+  }
 }

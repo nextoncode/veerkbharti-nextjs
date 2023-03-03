@@ -1,6 +1,7 @@
 .personalInfoSection {
   font-size: 1rem;
-  height: 100vh;
+  padding-top: 5rem;
+  padding-bottom: 0;
 }
 
 .personalInfo {
@@ -64,13 +65,13 @@
 }
 
 .bottomLine {
-  margin: 4rem auto 0 auto;
+  margin: 6rem auto 0 auto;
   text-align: center;
   width: 50%;
 }
 
 .sectionSecondaryTitle {
-  margin-bottom: 4.8rem;
+  margin-bottom: 3.5rem;
 }
 
 .sectionSecondaryTitle h4 {
@@ -80,15 +81,15 @@
   text-transform: capitalize;
 }
 
-/* .skillsContainer {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  column-gap: 3.1rem;
-  row-gap: 1.2rem;
-} */
-
-
 @media screen and (max-width: 992px) {
+  .personalInfoSection {
+    padding-top: 3rem;
+  }
+
+  .bottomLine {
+    margin: 4rem auto 0 auto;
+  }
+
   .personalInfo h5 {
     letter-spacing: 2px;
     font-size: 1.2rem;
@@ -117,6 +118,10 @@
 }
 
 @media (max-width: 767px) {
+  .sectionSecondaryTitle {
+    margin-bottom: 2.5rem;
+  }
+
   .personalInfo h5 {
     align-self: center;
   }
@@ -133,11 +138,15 @@
   .personalInfo ul {
     gap: 0.8rem;
   }
-
 }
 
 @media (max-width: 576px) {
+  .personalInfoSection {
+    padding-top: 2.8rem;
+  }
+
   .skillsContainer {
     grid-template-columns: 1fr;
   }
 }
+

@@ -5,7 +5,7 @@ import styles from "./blogs.module.css";
 const BlogsPage = () => {
   return (
     <section>
-      <div className="container mb-5 pb-5">
+      <div className="container">
         <SectionMainTitle mainTitle="Posts" subTitle="My Blogs" />
         <div className="row">
           <div className="col-md-6 col-lg-4 mb-md-0 mb-4">
